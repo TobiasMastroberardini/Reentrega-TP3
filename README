@@ -1,0 +1,81 @@
+Integrantes:
+
+Enzo Garcia Manariti
+
+Tobias Mastroberardini
+
+Tematica:
+
+Pagina web de club de futbol, donde los usuarios podran ser socios y ver las membresias disponibles
+
+Endpoints del trabajo:
+
+subscripciones:
+
+Listado de todas las subscripciones: obtiene un listado de todas las subscrpciones. HTTP METHOD: GET. Ejemplo para obtener todas las subscripciones de forma normal: localhost/entregaApi/api/sub 
+Ejemplo para obtener las subscripciones dado un campo de la tabla y un tipo de orden: localhost/entregaApi/api/sub/?sort=valor&order=desc
+
+Listado de una subscripcion por id: se ingresa el id de la subscripcion de la cual se quiere ver su información y se lista esa subscripcion en particular. HTTP METHOD: GET Ejemplo:localhost/entregaApi/api/sub/2
+
+Agregar una nueva subscripcion: se completan todos los campos requeridos en la sección  y se agrega una subscripcion. Ejemplo: localhost/entregaApi/api/sub METHOD: POST
+
+Modificar una subscripcion: permite  modificar una subscripcion dado su id y completando los campos requeridos. HTTP METHOD: PUT Ejemplo:localhost/entregaApi/api/sub/5
+
+Eliminar una subscripcion: permite dado un id, eliminar una subscripcion (membresia). METHOD: DELETE Ejemplo:localhost/entregaApi/api/sub/3
+
+socios:
+
+Listado de todas los socios: obtiene un listado de todos los socis en formato de objeto JSON. HTTP METHOD: GET. Ejemplo para obtener todos los socios de forma normal: localhost/entregaApi/api/socios 
+Ejemplo para obtener los socios dado un campo de la tabla y un tipo de orden: localhost/entregaApi/api/socios/?sort=valor&order=desc
+
+Listado de un socios por id: se ingresa el id del socio del cual se quiere ver su información y se lista ese socio en particular. HTTP METHOD: GET Ejemplo:localhost/entregaApi/api/socio/2
+
+Agregar un nuevo socio: se completan todos los campos requeridos en la sección  y se agrega un socio. Ejemplo: localhost/entregaApi/api/socio METHOD: POST
+
+Modificar un socio: permite  modificar un socio dado su id y completando los campos requeridos. HTTP METHOD: PUT Ejemplo:localhost/entregaApi/api/socio/5
+
+Eliminar un socio: permite dado un id, eliminar un socio. METHOD: DELETE Ejemplo:localhost/entregaApi/api/socio/3
+
+
+
+
+
+Ejemplo de JSON:
+
+[
+    {
+        "id": 1,
+        "tipo": "FAN",
+        "caracteristicas": "POPULAR",
+        "duracion": 2,
+        "precio": 750
+    },
+     {
+        "id": 2,
+        "tipo": "SUPER FAN",
+        "caracteristicas": "POPULAR",
+        "duracion": "2",
+        "precio": 1800
+    },
+   {
+        "id": 3,
+        "tipo": "MEGA FAN",
+        "caracteristicas": "PLATEA",
+        "duracion": "2",
+        "precio": 2500
+    },
+   {
+        "id": 4,
+        "tipo": "BOSTERO",
+        "caracteristicas": "PLATEA",
+        "duracion": 5,
+        "precio": 7500
+    },
+   {
+        "id": 5,
+        "tipo": "SUPER BOSTERO",
+        "caracteristicas": "PALCO",
+        "duracion": 50,
+        "precio": 90000
+    },
+]
