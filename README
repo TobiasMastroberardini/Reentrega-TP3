@@ -6,36 +6,22 @@ Tobias Mastroberardini
 
 Tematica:
 
-Pagina web de club de futbol, donde los usuarios podran ser socios y ver las membresias disponibles
+Pagina web de club de futbol, donde los usuarios podran ver las membresias disponibles para ser socios
 
 Endpoints del trabajo:
 
 subscripciones:
 
-Listado de todas las subscripciones: obtiene un listado de todas las subscrpciones. HTTP METHOD: GET. Ejemplo para obtener todas las subscripciones de forma normal: localhost/entregaApi/api/sub 
-Ejemplo para obtener las subscripciones dado un campo de la tabla y un tipo de orden: localhost/entregaApi/api/sub/?sort=valor&order=desc
+Listado de todas las subscripciones: obtiene un listado de todas las subscrpciones. HTTP METHOD: GET. Ejemplo para obtener todas las subscripciones de forma normal: localhost/entregaApi/api/subscripciones
+Ejemplo para obtener las subscripciones dado un campo de la tabla y un tipo de orden: localhost/entregaApi/api/subscripciones/?sort=valor&order=desc
 
-Listado de una subscripcion por id: se ingresa el id de la subscripcion de la cual se quiere ver su información y se lista esa subscripcion en particular. HTTP METHOD: GET Ejemplo:localhost/entregaApi/api/sub/2
+Listado de una subscripcion por id: se ingresa el id de la subscripcion de la cual se quiere ver su información y se lista esa subscripcion en particular. HTTP METHOD: GET Ejemplo:localhost/entregaApi/api/subscripciones/2
 
-Agregar una nueva subscripcion: se completan todos los campos requeridos en la sección  y se agrega una subscripcion. Ejemplo: localhost/entregaApi/api/sub METHOD: POST
+Agregar una nueva subscripcion: se completan todos los campos requeridos en la sección  y se agrega una subscripcion. Ejemplo: localhost/entregaApi/api/subscripciones METHOD: POST
 
-Modificar una subscripcion: permite  modificar una subscripcion dado su id y completando los campos requeridos. HTTP METHOD: PUT Ejemplo:localhost/entregaApi/api/sub/5
+Modificar una subscripcion: permite  modificar una subscripcion dado su id y completando los campos requeridos. HTTP METHOD: PUT Ejemplo:localhost/entregaApi/api/subscripciones/5
 
-Eliminar una subscripcion: permite dado un id, eliminar una subscripcion (membresia). METHOD: DELETE Ejemplo:localhost/entregaApi/api/sub/3
-
-socios:
-
-Listado de todas los socios: obtiene un listado de todos los socis en formato de objeto JSON. HTTP METHOD: GET. Ejemplo para obtener todos los socios de forma normal: localhost/entregaApi/api/socios 
-Ejemplo para obtener los socios dado un campo de la tabla y un tipo de orden: localhost/entregaApi/api/socios/?sort=valor&order=desc
-
-Listado de un socios por id: se ingresa el id del socio del cual se quiere ver su información y se lista ese socio en particular. HTTP METHOD: GET Ejemplo:localhost/entregaApi/api/socio/2
-
-Agregar un nuevo socio: se completan todos los campos requeridos en la sección  y se agrega un socio. Ejemplo: localhost/entregaApi/api/socio METHOD: POST
-
-Modificar un socio: permite  modificar un socio dado su id y completando los campos requeridos. HTTP METHOD: PUT Ejemplo:localhost/entregaApi/api/socio/5
-
-Eliminar un socio: permite dado un id, eliminar un socio. METHOD: DELETE Ejemplo:localhost/entregaApi/api/socio/3
-
+Eliminar una subscripcion: permite dado un id, eliminar una subscripcion (membresia). METHOD: DELETE Ejemplo:localhost/entregaApi/api/subscripciones/3
 
 
 
