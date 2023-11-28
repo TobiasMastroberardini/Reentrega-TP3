@@ -8,21 +8,17 @@ Tematica:
 
 Pagina web de club de futbol, donde los usuarios podran ver las membresias disponibles para ser socios
 
-Endpoints del trabajo:
 
-subscripciones:
 
-Listado de todas las subscripciones: obtiene un listado de todas las subscrpciones. HTTP METHOD: GET. Ejemplo para obtener todas las subscripciones de forma normal: localhost/entregaApi/api/subscripciones
-Ejemplo para obtener las subscripciones dado un campo de la tabla y un tipo de orden: localhost/entregaApi/api/subscripciones/?sort=valor&order=desc
+ENDPOINTS:
 
-Listado de una subscripcion por id: se ingresa el id de la subscripcion de la cual se quiere ver su información y se lista esa subscripcion en particular. HTTP METHOD: GET Ejemplo:localhost/entregaApi/api/subscripciones/2
+GET: subscripciones (devuelve lista completa de las subscripciones) subscripcionesCreciente (devuelve lista completa ordenada crecientemente) subscripcionesDecreciente (devuelve lista completa ordenada decrecientemente) subscripcion/id (devuelve una subscripcion en especifico en base a su id)
 
-Agregar una nueva subscripcion: se completan todos los campos requeridos en la sección  y se agrega una subscripcion. Ejemplo: localhost/entregaApi/api/subscripciones METHOD: POST
+POST: subscripcion (crea una nueva subscripcion en base a los valores de este [tipo, duracion, caracteristicas y precio])
 
-Modificar una subscripcion: permite  modificar una subscripcion dado su id y completando los campos requeridos. HTTP METHOD: PUT Ejemplo:localhost/entregaApi/api/subscripciones/5
+PUT: subscripcion/id (se actualiza una subscripcion en base a su id, usando los mismos parametros que en el POST)
 
-Eliminar una subscripcion: permite dado un id, eliminar una subscripcion (membresia). METHOD: DELETE Ejemplo:localhost/entregaApi/api/subscripciones/3
-
+DELETE: subscripcion/id (se elimina una subscripcion en base a su id)
 
 
 
