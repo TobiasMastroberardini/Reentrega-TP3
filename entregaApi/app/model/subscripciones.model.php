@@ -55,7 +55,7 @@ class subscripcionesModel extends model
 
     function getDecreciente()
     {
-        $query = $this->db->prepare('SELECT * FROM productos ORDER BY tipo DESC');
+        $query = $this->db->prepare('SELECT * FROM subscripciones ORDER BY tipo DESC');
         $query->execute();
 
         $subscripciones = $query->fetchAll(PDO::FETCH_OBJ);
